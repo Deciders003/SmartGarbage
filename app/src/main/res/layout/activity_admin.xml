@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".People.GetLocation">
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.tomtom.online.sdk.map.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.github.clans.fab.FloatingActionMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:menu_animationDelayPerItem="35"
+        fab:menu_backgroundColor="@color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#da3e21"
+
+        fab:menu_colorPressed="#dc4b3f"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#ffffff"
+        fab:menu_labels_cornerRadius="18dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="right"
+        fab:menu_fab_show_animation="@anim/fab_slide_in_from_right"
+        fab:menu_showShadow="false"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#1A1A1A"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="down"
+        fab:menu_shadowColor="#cf1020"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_fab_size="normal"
+        >
+
+
+        <com.github.clans.fab.FloatingActionButton
+            fab:fab_label="Add Driver"
+            android:id="@+id/adddriver1"
+            fab:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.github.clans.fab.FloatingActionButton
+            fab:fab_label="Set Garbage"
+            android:id="@+id/setgarbage1"
+            fab:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addgarbage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="Add Garbage"
+            fab:fab_size="mini"
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <CheckBox
+        android:id="@+id/checkremove"
+        android:text="Remove garbage"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textColor="#cf1020"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+
+        android:checked="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--<Button-->
+        <!--android:id="@+id/garbage"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="Add Garbage"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:id="@+id/setgarbage"-->
+        <!--android:layout_marginTop="150dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="set Garbage"-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:id="@+id/adddriver"-->
+        <!--android:text="Add driver"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="250dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+</RelativeLayout>

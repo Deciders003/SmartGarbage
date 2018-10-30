@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ZoomButton" parent="GenericControlButton" />
+
+    <style name="ZoomButtonsGroup" parent="GenericControlButtonsGroup">
+        <item name="android:layout_width">@dimen/control_button_default_size</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+</resources>

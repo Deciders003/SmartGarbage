@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    >
+    <ImageView
+        android:id="@+id/carmain"
+        android:visibility="invisible"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="220dp"
+        android:layout_y="251dp"
+        android:src="@drawable/car" />
+    <ImageView
+        android:id="@+id/carmain2"
+        android:visibility="invisible"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="310dp"
+        android:layout_y="251dp"
+        android:src="@drawable/car" />
+
+    <ImageView
+        android:id="@+id/carmain1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="115dp"
+        android:layout_y="251dp"
+        android:src="@drawable/car"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="186dp"
+        android:layout_x="88dp"
+        android:layout_y="28dp"
+        app:srcCompat="@drawable/lol"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="282dp"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="57dp"
+        android:layout_height="39dp"
+        android:layout_x="8dp"
+        android:layout_y="254dp"
+        app:srcCompat="@drawable/car"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:layout_x="0dp"
+        android:layout_y="392dp"
+        app:srcCompat="@drawable/down"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_x="26dp"
+        android:layout_y="300dp"
+        app:srcCompat="@drawable/icon"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="97dp"
+        android:layout_y="296dp"
+        android:text="Admin"
+        android:textColor="#cf1020"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="306dp"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/truck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="199dp"
+        android:layout_y="297dp"
+        android:background="@android:color/transparent"
+        android:text="Truck"
+        android:textColor="#cf1020"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <Button
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="297dp"
+        android:layout_y="297dp"
+        android:background="@android:color/transparent"
+        android:text="People"
+        android:textColor="#Cf1020"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="28dp" />
+</AbsoluteLayout>

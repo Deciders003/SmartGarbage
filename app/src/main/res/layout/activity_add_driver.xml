@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        tools:context="com.example.admin.signup.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="384dp"
+            android:layout_height="565dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="2dp"
+            android:layout_x="5dp"
+            android:layout_y="223dp"
+            app:srcCompat="@drawable/bg"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="9dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="314dp"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignTop="@+id/editText"
+            android:layout_marginTop="14dp"
+            android:layout_x="43dp"
+            android:layout_y="541dp"
+            app:srcCompat="@drawable/textline1"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="314dp"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignTop="@+id/editText"
+            android:layout_marginTop="14dp"
+            android:layout_x="42dp"
+            android:layout_y="482dp"
+            app:srcCompat="@drawable/textline1"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="314dp"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignTop="@+id/editText"
+            android:layout_marginTop="14dp"
+            android:layout_x="41dp"
+            android:layout_y="368dp"
+            app:srcCompat="@drawable/textline1"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="314dp"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignTop="@+id/editText"
+            android:layout_marginTop="14dp"
+            android:layout_x="41dp"
+            android:layout_y="421dp"
+            app:srcCompat="@drawable/textline1"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <EditText
+            android:id="@+id/drivermobileno"
+            android:layout_width="283dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignRight="@+id/button"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginTop="28dp"
+            android:layout_x="61dp"
+            android:layout_y="462dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Mobile"
+
+            android:inputType="phone"
+            android:textColor="#cf1020"
+
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <EditText
+            android:id="@+id/driverlicense"
+            android:layout_width="283dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignRight="@+id/button"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginTop="28dp"
+            android:layout_x="60dp"
+            android:layout_y="520dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="License ID"
+
+            android:inputType="textEmailAddress"
+            android:textColor="#cf1020"
+
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <EditText
+            android:id="@+id/driverpass"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignRight="@+id/button"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginTop="28dp"
+            android:layout_x="60dp"
+            android:layout_y="409dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+
+            android:inputType="textPassword"
+            android:textColor="#cf1020"
+
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <EditText
+            android:id="@+id/driverusername"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignRight="@+id/button"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginTop="28dp"
+            android:layout_x="58dp"
+            android:layout_y="357dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Username"
+
+            android:inputType="textPersonName"
+            android:textColor="#cf1020"
+
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <Button
+            android:id="@+id/driversub"
+            android:layout_width="296dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="88dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:layout_x="53dp"
+            android:layout_y="597dp"
+            android:background="@drawable/sub"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="95dp"
+            android:layout_height="97dp"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="104dp"
+            android:layout_x="150dp"
+            android:layout_y="227dp"
+            app:srcCompat="@drawable/hicircle"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_x="170dp"
+            android:layout_y="260dp"
+            android:text="Hello"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#cf1020"
+            tools:layout_editor_absoluteX="189dp"
+            tools:layout_editor_absoluteY="223dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="126dp"
+            android:layout_y="138dp"
+            android:text="Sign up"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#cf1020"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="145dp"
+            android:layout_height="134dp"
+            android:layout_x="125dp"
+            android:layout_y="0dp"
+            android:background="@drawable/lol"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+
+    </AbsoluteLayout>
+</ScrollView>

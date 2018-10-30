@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TomTom</string>
+    <string name="geocode_no_results">No geocoder results. Choose different location and try again.</string>
+    <string name="api_response_error">API response error: \'%1$s\'.</string>
+    <string name="example"><u>Login</u></string>
+    <string name="register"><u>Register</u></string>
+</resources>
