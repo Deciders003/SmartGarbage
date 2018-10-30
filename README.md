@@ -1,5 +1,5 @@
 # SmartGarbage
-smart garbage collector
+Smart Garbage Collector
 # How it Works ?
 Totally three users
 * Admin
