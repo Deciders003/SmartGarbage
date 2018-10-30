@@ -8,7 +8,11 @@ Totally three users
 # Admin
 Admin involves two types of works,
 * Add garbage or Remove garbage (Garbage added to tomtom map or Removed from tomtom map).
-* Add driver(Admin creates the account to the truck driver). 
+* Add driver(Admin creates the account to the truck driver).
+# For Admin Login use this username and password.
+* username = "admin"
+* password = "login"
+
 # People
  * People can access the garbage added by the admin.
  * If the garbage tin is full,people request the truck to cleanup the tin.
