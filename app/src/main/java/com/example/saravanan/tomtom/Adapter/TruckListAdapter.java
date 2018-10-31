@@ -59,7 +59,8 @@ viewHolder.body.setText(truckList.getBody());
         public void onClick(View v) {
             if(track !=null)
             {
-                track.track(i);
+             String name=viewHolder.head.getText().toString();
+                track.track(name);
             }
         }
     });
