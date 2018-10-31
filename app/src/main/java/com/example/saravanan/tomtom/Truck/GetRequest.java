@@ -106,34 +106,36 @@ recyclerView.setAdapter(adapter);
         requestQueue.add(jsonArrayRequest);
     }
 
-    @Override
-    public void track(final int i) {
+       @Override
+    public void track(final String name) {
+     //   Log.e("iiii",""+i);
         RequestQueue requestQueue= Volley.newRequestQueue(this);
-        String url="http://fundevelopers.website/TomTom/truck.php";
-        final JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Request.Method.POST, url, null, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                    try {
-                        final JSONObject jsonObject=response.getJSONObject(i);
-                        String latitude=jsonObject.getString("latitude");
-                        String longitude=jsonObject.getString("longitude");
-                        Intent intent=new Intent(GetRequest.this, TrackTruck.class);
-                        intent.putExtra("lat",latitude);
-                        intent.putExtra("lang",longitude);
-                        startActivity(intent);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+        String url="http://192.168.137.1/php/tracktruck.php";
+     StringRequest stringRequest=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+         @Override
+         public void onResponse(String response) {
+      String[] split=response.split(",");
+      String latitude=split[0];
+      String longitude=split[1] ;
+      Intent intent=new Intent(GetRequest.this,TrackTruck.class);
+     intent.putExtra("lat",latitude);
+     intent.putExtra("lang",longitude);
+      startActivity(intent);
+         }
+     }, new Response.ErrorListener() {
+         @Override
+         public void onErrorResponse(VolleyError error) {
 
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        });
-        requestQueue.add(jsonArrayRequest);
+         }
+     }){
+         @Override
+         protected Map<String, String> getParams() throws AuthFailureError {
+             Map<String,String> params=new HashMap<String, String>();
+             params.put("name",name);
+             return params;
+         }
+     };
+     requestQueue.add(stringRequest);
     }
 
     @Override
