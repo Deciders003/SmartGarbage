@@ -24,5 +24,5 @@ Admin involves two types of works,
  * Alternative route can be displayed if the driver wants to change the route.
  * If the garbage is cleaned the truck driver notify the people who sends the request.
  * People check the garbage and confirm the response to the truck driver.
-# To Download the Mobile App click this link
+# To Download the Mobile App click this below link
 http://fundevelopers.website/TomTom/smartgarbage.apk
